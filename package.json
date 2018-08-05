@@ -1,0 +1,16 @@
+{
+  "name": "landing-generator",
+  "version": "1.0.0",
+  "description": "generador de landing page",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --config ./build/webpack.config.js --mode development",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Danisauryo\u001b[i\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[C\u001b[C\u001b[C\u001b[y",
+  "license": "MIT",
+  "devDependencies": {
+    "webpack": "^4.16.3",
+    "webpack-cli": "^3.1.0"
+  }
+}
