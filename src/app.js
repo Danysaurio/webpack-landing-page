@@ -1,1 +1,1 @@
-alert('hola bebe')
+import "./main.scss";

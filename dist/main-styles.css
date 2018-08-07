@@ -1,0 +1,6 @@
+body {
+  background-color: red;
+  display: flex;
+  -webkit-animation-name: fade;
+          animation-name: fade; }
+
