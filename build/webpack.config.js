@@ -55,6 +55,19 @@ module.exports = {
                 ]
             },
             {
+                test: /\.(eot|svg|ttf|woff|woff2)$/,
+                use:[
+                    {
+                        loader: "file-loader",
+                        options:{
+                            name: '[name].[ext]',
+                            outputPath: 'static/fonts',
+                            useRelativePath: true,
+                        }
+                    }
+                ]
+            },
+            {
                 test: /\.(jpg|png|gif)$/,
                 use:[
                     {
