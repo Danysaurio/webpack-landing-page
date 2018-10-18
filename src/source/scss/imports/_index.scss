@@ -1,0 +1,123 @@
+@keyframes animatedBackground {
+  from {
+    background-position: 0 0;
+  }
+
+  to {
+    background-position: 180vw 0%;
+  }
+}
+
+@keyframes meteoro {
+  from {
+    left: -15em;
+    bottom: 20%;
+    transform: rotate(-10deg) scale(1.5);
+    opacity: 1;
+  }
+
+  to {
+    left: 100%;
+    bottom: 90%;
+    transform: rotate(-15deg) scale(0.3);
+    opacity: .5;
+  }
+}
+
+
+.banner {
+  -ms-flex-align: center;
+  align-items: center;
+  background: url("../img/banner1.jpg");   
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+}
+
+.banner__stars {
+  background: url("../img/stars-copia.png");
+  height: 100%;
+  width: 100%;
+  background-size: 100% 80%;
+  background-repeat: repeat no-repeat;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  animation: animatedBackground 120s linear infinite;
+}
+
+.banner__meteoro {
+  position: absolute;
+  left: -15em;
+  width: 15em;
+  z-index: 0;
+  &.animado {
+    animation: meteoro .8s ease-out 1;
+  }
+}
+
+.banner__box {
+  cursor: default;
+  text-align: center;
+}
+
+.banner__title {
+  font-size: 4em;
+  text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+  z-index: 99;
+}
+
+.banner__subtitle {
+  font-size: 1.3em;
+  padding-bottom: 3em;
+}
+
+.banner__btn {
+  position: absolute;
+  width: 100%;
+  font-size: 2em;
+  bottom: 1.5em;
+  display: block;
+}
+
+.banner__icon {
+  color: #fff;
+  cursor: pointer;
+  transition: all .3s	ease;
+  display: inline-block;
+  &:hover {
+    transform: rotate(360deg);
+    font-size: 1.3em;
+    text-shadow: 0 0 5px #fff;
+    &:before {
+      content: "\e9a7";
+    }
+  }
+}
+
+.presentation {
+  background: #1a191a;
+  background: linear-gradient(to right, #1a191a 1%, #1a191a 78%, #1a191a 78%, #0f0e11 79%, #0f0e11 100%);
+  color: #EEEEEE;
+}
+
+.presentation__img-container {
+  background: #0f0e11;
+}
+
+.presentation__bot {
+  max-width: 80%;
+}
+
+.iDo {
+  background: linear-gradient(to right, #001f39 1%, #001f39 78%, #001f39 78%, #001c33 79%, #001c33 100%);
+}
+
+.iDo__img-container {
+  background-color: #001c33;
+}

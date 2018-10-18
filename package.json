@@ -29,6 +29,7 @@
     "@fortawesome/fontawesome-free": "^5.2.0",
     "bootstrap-4-grid": "^2.4.1",
     "handlebars": "^4.0.11",
-    "normalize.css": "^8.0.0"
+    "normalize.css": "^8.0.0",
+    "vanilla-tilt": "^1.5.0"
   }
 }

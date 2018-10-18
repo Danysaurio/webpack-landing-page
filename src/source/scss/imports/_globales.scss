@@ -1,0 +1,41 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Fredoka One", cursive;
+  font-weight: normal;
+}
+
+body {
+  overflow-x: hidden;
+  font-size: 16px;
+}
+
+.monse {
+  font-family: "Montserrat", sans-serif;
+}
+
+.fredoka {
+  font-family: "Fredoka One", cursive;
+}
+
+.white {
+  color: #f5f5f5;
+}
+
+.title-line {
+  display: inline;
+  position: relative;
+  &:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 105%;
+    background-color: #124b8d;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
